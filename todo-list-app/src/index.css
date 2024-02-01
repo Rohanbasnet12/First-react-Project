@@ -1,0 +1,111 @@
+/* RESET CSS */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* CSS VARIABLES */
+:root {
+    /* Font Family */
+    --PRIMARY-FONT: "Josefin Sans", sans-serif;
+
+    /* Font Size */
+    --HEAD-SIZE: 18px;
+}
+
+/* GENERAL STYLES */
+html,
+body {
+    scroll-behavior: smooth;
+}
+
+/* STYLING ROOT SECTION */
+#root {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    padding: 3rem 2rem;
+    justify-content: center;
+    background: #352f5b;
+}
+
+.container {
+    width: 40vw;
+}
+
+/* Styling Inbox Section */
+
+.inbox {
+    background: rgba(0, 0, 0, 0.4);
+    border-radius: 6px;
+    max-width: 40vw;
+    height: 10vh;
+    padding: 0 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.inbox>input {
+    background: rgba(0, 0, 0, 0.01);
+    color: white;
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
+
+.inbox>input:first-child {
+    width: 100%;
+    padding: 6px 0;
+}
+
+.inbox>input:hover,
+input:focus {
+    border: none;
+    outline: none;
+}
+
+.btn {
+    background: rgb(0, 119, 255);
+    padding: 5px 10px;
+    border-radius: .3em;
+    color: white;
+}
+
+/* Styling list item */
+.listItem {
+    height: 500px;
+    width: 100%;
+    overflow-y: scroll;
+    padding-top: 1rem;
+}
+
+.listItem::-webkit-scrollbar {
+    width: 0;
+}
+
+.box {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    background: rgba(0, 0, 0, 0.1);
+    padding: 18px 20px;
+    border-radius: 6px;
+}
+
+.checkBtn {
+    width: 17px;
+    height: 17px;
+    outline: none;
+    border: none;
+    border-radius: 2px;
+}
+
+.box>p {
+    margin-left: .6em;
+    color: rgba(255, 255, 255, 0.767);
+    font-family: var(--PRIMARY-FONT);
+    font-size: var(--HEAD-SIZE);
+    font-weight: 400;
+}
